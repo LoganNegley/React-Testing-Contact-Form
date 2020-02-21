@@ -16,6 +16,7 @@ const ContactForm = () => {
         <div>
           <label htmlFor="firstName">First Name*</label>
           <input
+           aria-labelledby='firstName'
             name="firstName"
             placeholder="bill"
             ref={register({ required: true, maxLength: 3 })}
