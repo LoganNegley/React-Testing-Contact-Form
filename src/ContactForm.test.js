@@ -6,12 +6,12 @@ import ContactForm from '../src/components/ContactForm';
 test('renders First Name,Last Name, Email and Message inputs', ()=>{
 
 //Arrange
-const {getByLabelText} = render(<ContactForm/>);
+const {getByText} = render(<ContactForm/>);
 // Act
-getByLabelText(/first name/i);
-getByLabelText(/Last Name/i);
-getByLabelText(/Email/i);
-getByLabelText(/Messag/i);
+getByText(/first name/i);
+getByText(/Last Name/i);
+getByText(/Email/i);
+getByText(/Message/i);
 //Assert
 
 })
