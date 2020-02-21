@@ -11,7 +11,7 @@ const {getByLabelText} = render(<ContactForm/>);
 getByLabelText(/first name/i);
 getByLabelText(/Last Name/i);
 getByLabelText(/Email/i);
-getyByLabelText(/Message/i);
+getByLabelText(/Message/i);
 //Assert
 
 })
