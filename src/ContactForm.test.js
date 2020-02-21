@@ -8,11 +8,16 @@ test('renders First Name,Last Name, Email and Message inputs', ()=>{
 //Arrange
 const {getByText} = render(<ContactForm/>);
 // Act
-const firstNameInput = getByText(/First name/i);
+const firstNameInput = getByText(/First name/i)
 const lastNameInput = getByText(/Last Name/i);
 const emailInput = getByText(/Email/i);
 const messageInput = getByText(/Message/i);
 //Assert
+expect(firstNameInput).toBeInTheDocument()
+expect(lastNameInput).toBeInTheDocument()
+expect(emailInput).toBeInTheDocument()
 expect(messageInput).toBeInTheDocument()
+
 });
+
 
