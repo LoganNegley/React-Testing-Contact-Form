@@ -26,11 +26,8 @@ expect(messageInput).toBeTruthy()
 
 
 
-test('placeholder for email', ()=>{
+test('', ()=>{
     // Arrange
-    const {getByPlaceholderText} = render(<ContactForm/>);
     // Act
-    const emailPlaceholder = getByPlaceholderText(/ bluebill1049@hotmail.com/i)
     // Assert
-    expect(emailPlaceholder).toMatch('bluebill1049@hotmail.com');
 })

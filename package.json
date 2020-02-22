@@ -33,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "jest": "^25.1.0",
     "mutationobserver-shim": "^0.3.3"
   }
 }
